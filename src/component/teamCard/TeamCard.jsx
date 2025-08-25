@@ -1,5 +1,5 @@
 import { Image } from "react-bootstrap";
-import "./teamcard.css";
+import "./teamCard.css";
 
 // import for icon
 import { FaPlus } from "react-icons/fa";
@@ -9,7 +9,7 @@ import { FaPinterest } from "react-icons/fa6";
 
 import ImageOne from "../../assets/teamcard1.png";
 
-const TeamCard = ({heading,paragraph}) => {
+const TeamCard = ({ heading, paragraph }) => {
   return (
     <div className="teamCardElement">
       <Image src={ImageOne} className="teamCardImages" />
