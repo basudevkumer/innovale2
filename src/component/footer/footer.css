@@ -2,6 +2,8 @@
   padding: 110px 0 30px;
   background: #30344e;
 }
+
+/* Brand */
 .brandIndentyParagraph {
   padding: 25px 0;
   color: #fff !important;
@@ -9,15 +11,26 @@
 .brandIndentyIconMain {
   display: flex;
   column-gap: 7px;
+  flex-wrap: wrap;
 }
 .brandIndentyIcon {
-  font-size: 25px;
+  font-size: 20px;
 }
 .iconParent {
   padding: 10px;
   background: #fff;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
 }
+.iconParent:hover {
+  background: #52c5b6;
+}
+
+/* List */
 .listFirstText {
   font-size: 18px !important;
   font-weight: 600 !important;
@@ -30,20 +43,29 @@
   display: flex;
   flex-direction: column;
   row-gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .listMain a {
   color: #fff;
   font-family: "Inter", sans-serif;
   line-height: 26px;
   font-size: 16px;
-  font-size: 400;
+  font-weight: 400;
+  transition: color 0.2s;
 }
+.listMain a:hover {
+  color: #52c5b6;
+}
+
+/* Newsletter */
 .updateParagarph {
   color: #fff;
   font-family: "Inter", sans-serif;
   line-height: 26px;
   font-size: 16px;
-  font-size: 400;
+  font-weight: 400;
   padding: 12px 0 32px;
 }
 .footerInput::placeholder {
@@ -55,13 +77,16 @@
 }
 .footerInput {
   padding: 16px 25px !important;
+  padding-right: 60px !important;
+  background: #fff;
+  border: none;
+  border-radius: 6px;
 }
 .inputFrom {
   position: relative;
 }
 .updateIcon {
-  font-size: 25px;
-  font-size: 25px;
+  font-size: 20px;
   color: #fff;
 }
 .updateIconParent {
@@ -72,17 +97,140 @@
   padding: 9px;
   border-radius: 6px;
   background: #fd5f36;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
+
+/* Divider */
 .footerDivider {
   height: 3px;
   width: 100%;
   background: rgba(210, 210, 210, 0.394);
   margin: 60px 0 24px;
 }
+
+/* Bottom */
 .footerBottomParagarph {
   font-family: "Inter", sans-serif;
   line-height: 20px;
   font-size: 16px;
-  font-size: 400;
+  font-weight: 400;
   color: #fff;
+}
+
+/* footerCol gap on mobile */
+.footerCol {
+  margin-bottom: 40px;
+}
+
+/* =====================
+   RESPONSIVE — max 991px
+   ===================== */
+@media (max-width: 991px) {
+  .footer {
+    padding: 70px 0 30px;
+  }
+
+  .footerBottom {
+    text-align: center;
+  }
+
+  .footerBottomParagarph {
+    font-size: 14px;
+  }
+
+  .footerDivider {
+    margin: 40px 0 20px;
+  }
+}
+
+/* =====================
+   RESPONSIVE — max 767px
+   ===================== */
+@media (max-width: 767px) {
+  .footer {
+    padding: 50px 0 20px;
+  }
+
+  /* Brand full width, center */
+  .brandIndenty {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-logo{
+    width: 111px;
+    height: 60px;
+  }
+
+
+
+  /* Newsletter center */
+
+
+  .updateParagarph {
+    padding: 12px 0 20px;
+  }
+
+  .footerCol {
+    margin-bottom: 30px;
+  }
+
+  .footerDivider {
+    margin: 30px 0 16px;
+  }
+}
+
+/* =====================
+   RESPONSIVE — max 375px
+   ===================== */
+@media (max-width: 375px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .listFirstText {
+    font-size: 16px !important;
+  }
+
+  .listMain a {
+    font-size: 14px;
+  }
+
+  .updateParagarph {
+    font-size: 14px;
+  }
+
+  .footerInput {
+    padding: 12px 20px !important;
+    padding-right: 55px !important;
+    font-size: 13px;
+  }
+
+  .footerCol {
+    margin-bottom: 24px;
+  }
+}
+
+/* =====================
+   RESPONSIVE — max 320px
+   ===================== */
+@media (max-width: 320px) {
+  .listFirstText {
+    font-size: 15px !important;
+  }
+
+  .listMain a {
+    font-size: 13px;
+  }
+
+  .brandIndentyIcon {
+    font-size: 16px;
+  }
+
+  .iconParent {
+    padding: 8px;
+  }
 }
