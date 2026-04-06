@@ -8,7 +8,6 @@ import BannarImg from "../../assets/bannarimg.png";
 import BannarMan from "../../assets/bannarman.png";
 import Lotus from "../../assets/lotus.jpeg";
 import SignArrow from "../../assets/arrow.png";
-import Round from "../../assets/playouter.png";
 import PlayRound from "../../assets/play.png";
 import LineFire from "../../assets/linespread.png";
 

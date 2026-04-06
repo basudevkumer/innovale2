@@ -4,10 +4,12 @@
   position: relative;
   overflow: hidden;
 }
+
 .bannarParagraphOne {
   padding: 24px 0 40px;
   color: #fff;
 }
+
 .bannarParapraphTwo {
   padding: 50px 0 70px;
   color: #fff;
@@ -20,6 +22,7 @@
   line-height: 30px !important;
   font-family: "Inter", sans-serif !important;
 }
+
 .bannarImage {
   position: absolute;
   height: 100%;
@@ -27,6 +30,7 @@
   top: 0;
   right: 0;
 }
+
 .bannarMan {
   position: absolute;
   top: 100%;
@@ -35,11 +39,22 @@
   right: 25%;
   transform: translate(50%, -100%);
 }
+
+/* heading fix */
+.heading1 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 /* ==========animation area start====== */
-/* ======= animation for images start======== */
+
 .review {
   display: flex !important;
 }
+
 .reviewImage {
   height: 50px;
   width: 50px;
@@ -47,14 +62,17 @@
   display: inline-block;
   object-fit: cover;
 }
+
 .reviewImagesParent {
   position: relative;
 }
+
 .reviewText {
   margin-left: 200px;
   display: flex;
   flex-direction: column;
 }
+
 .rimgone {
   position: absolute;
   top: 0;
@@ -62,6 +80,7 @@
   animation: rOne 2s ease-in-out infinite;
   z-index: 1;
 }
+
 .rimgtwo {
   position: absolute;
   top: 0;
@@ -69,6 +88,7 @@
   animation: rTwo 2s linear infinite;
   z-index: 2;
 }
+
 .rimgthree {
   position: absolute;
   top: 0;
@@ -76,6 +96,7 @@
   animation: rThree 2s linear infinite;
   z-index: 3;
 }
+
 .rimgfour {
   position: absolute;
   top: 0;
@@ -105,6 +126,7 @@
     left: 0;
   }
 }
+
 @keyframes rFour {
   0% {
     top: 0;
@@ -115,18 +137,19 @@
     left: 0;
   }
 }
-/* ======= animation for images end======== */
 
-/* ======= animation for sign button arrow start======== */
+/* arrow animation */
 .signButton {
   position: relative;
 }
+
 .arrowImage {
   position: absolute;
   top: -78px;
   left: 50%;
   animation: updowns 4s ease-in-out infinite;
 }
+
 @keyframes updowns {
   0% {
     top: -78px;
@@ -137,10 +160,8 @@
     left: 47%;
   }
 }
-/* ======= animation for sign button arrow  end======== */
 
-/* ======= animation for video aimation  start======== */
-
+/* video animation */
 .videoPlay {
   background: #373b59;
   height: 220px;
@@ -152,6 +173,7 @@
   z-index: 0;
   border-top-left-radius: 10px;
 }
+
 .round {
   position: absolute;
   height: 120px;
@@ -164,6 +186,7 @@
   z-index: 1;
   animation: withLoss 3s linear infinite;
 }
+
 @keyframes withLoss {
   0% {
     width: 120px;
@@ -173,6 +196,7 @@
     height: 90px;
   }
 }
+
 .roundPlay {
   position: absolute;
   top: 50%;
@@ -182,6 +206,7 @@
   width: 45px;
   animation: increaceDecreace 3s ease-in-out infinite;
 }
+
 @keyframes increaceDecreace {
   0% {
     height: 45px;
@@ -193,9 +218,7 @@
   }
 }
 
-/* ======= animation for svideo aimation  end ======== */
-/* ======= animation for line fire aimation  start ======== */
-
+/* line fire animation */
 .lineFireAnim {
   position: absolute;
   bottom: 254px;
@@ -203,6 +226,7 @@
   transform: translateX(-100%);
   animation: leftright 4s linear infinite;
 }
+
 @keyframes leftright {
   0% {
     bottom: 254px;
@@ -213,10 +237,8 @@
     right: 47%;
   }
 }
-/* ======= animation for line fire aimation  end ======== */
 
-/* ======= animation for circle aimation  start ======== */
-
+/* circle animation */
 .circle {
   position: absolute;
   width: 175px;
@@ -227,6 +249,7 @@
   left: -7%;
   animation: roamRun 6s linear infinite;
 }
+
 @keyframes roamRun {
   0% {
     transform: rotate(0deg);
@@ -235,6 +258,7 @@
     transform: rotate(360deg);
   }
 }
+
 .dot {
   position: absolute;
   width: 37px;
@@ -246,9 +270,6 @@
   transform: translate(calc(-50% + 87.5px), -50%);
 }
 
-/* ======= animation for circle aimation  end ======== */
-/* ======= animation for circle two aimation  start ======== */
-
 .circleTwo {
   position: absolute;
   width: 175px;
@@ -259,6 +280,7 @@
   right: -6%;
   animation: roamRuntwo 6s linear infinite;
 }
+
 @keyframes roamRuntwo {
   0% {
     transform: rotate(360deg);
@@ -267,6 +289,7 @@
     transform: rotate(0deg);
   }
 }
+
 .dotTwo {
   position: absolute;
   width: 37px;
@@ -278,8 +301,6 @@
   transform: translate(calc(-50% + 87.5px), -50%);
 }
 
-/* ======= animation for circle two aimation  end ======== */
-
 /*====== animation area end====== */
 
 .reviewNumber {
@@ -290,16 +311,177 @@
   color: #52c5b6;
   margin-right: 20px;
 }
+
 .reviewStar {
   color: #fdb400;
   font-size: 20px;
 }
+
 .reviewNumRating {
   display: flex;
 }
+
 .reviewParagarph p {
   font-size: 18px;
   font-weight: 600;
   color: #fff;
   font-family: "Inter", sans-serif;
+}
+
+/* =====================
+   RESPONSIVE — max 991px (tablet)
+   ===================== */
+@media (max-width: 991.99px) {
+  .bannar {
+    padding: 50px 0 60px;
+    text-align: center;
+  }
+
+  /* heading visible fix */
+  .heading1 {
+    font-size: 36px !important;
+    position: relative;
+    z-index: 10;
+    line-height: 55px !important;
+  }
+
+  .bannarParagraphOne {
+    position: relative;
+    z-index: 10;
+    padding: 18px 0 28px;
+  }
+
+  .bannarParapraphTwo {
+    position: relative;
+    z-index: 10;
+    padding: 30px 0 50px;
+  }
+
+  .bannarElement {
+    position: relative;
+    z-index: 10;
+  }
+
+  /* background image dim করো যাতে text দেখা যায় */
+  .bannarImage {
+    opacity: 0.15;
+  }
+
+  /* man image hide */
+  .bannarMan {
+    display: none;
+  }
+
+  /* সব animation hidden */
+  .circle,
+  .circleTwo,
+  .dot,
+  .dotTwo,
+  .videoPlay,
+  .lineFireAnim,
+  .arrowImage {
+    display: none !important;
+  }
+
+  /* review center */
+  .review {
+    justify-content: center;
+  }
+
+  .reviewText {
+    margin-left: 160px;
+  }
+
+  /* image animations stop */
+  .rimgone,
+  .rimgtwo,
+  .rimgthree,
+  .rimgfour {
+    animation: none;
+  }
+}
+
+/* =====================
+   RESPONSIVE — max 767px (mobile)
+   ===================== */
+@media (max-width: 767.99px) {
+  .bannar {
+    padding: 40px 0 50px;
+    text-align: center;
+  }
+
+  .heading1 {
+    font-size: 28px !important;
+    line-height: 45px !important;
+  }
+
+  .bannarParagraphOne {
+    font-size: 15px;
+    padding: 14px 0 22px;
+  }
+
+  .bannarParapraphTwo {
+    font-size: 14px;
+    padding: 20px 0 35px;
+  }
+
+  .bannarParapraphTwo span a {
+    font-size: 16px !important;
+  }
+
+  .bannarImage {
+    opacity: 0.1;
+    width: 100%;
+  }
+
+  .reviewText {
+    margin-left: 130px;
+  }
+
+  .reviewNumber {
+    font-size: 20px;
+  }
+
+  .reviewParagarph p {
+    font-size: 15px;
+  }
+}
+
+/* =====================
+   RESPONSIVE — max 375px
+   ===================== */
+@media (max-width: 375.99px) {
+  .heading1 {
+    font-size: 24px !important;
+    line-height: 40px !important;
+  }
+
+  .bannarParagraphOne {
+    font-size: 14px;
+  }
+
+  .reviewText {
+    margin-left: 115px;
+  }
+
+  .reviewNumber {
+    font-size: 18px;
+  }
+
+  .reviewStar {
+    font-size: 16px;
+  }
+}
+
+/* =====================
+   RESPONSIVE — max 320px
+   ===================== */
+@media (max-width: 320.99px) {
+  .heading1 {
+    font-size: 21px;
+  }
+
+  .reviewText {
+    margin-left: 105px;
+  }
 }
