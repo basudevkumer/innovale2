@@ -2,7 +2,16 @@
   padding: 110px 0;
   margin: 230px 0 120px;
   background: #52c5b6;
+  overflow: hidden;
 }
+
+.worldsliderImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  padding: 0 10px;
+}
+
 .worldLeftSideHeading {
   font-size: 37px;
   font-weight: 600;
@@ -11,10 +20,12 @@
   color: #fff;
   padding-bottom: 40px;
 }
+
 .worldButton:hover {
   border-color: #fff !important;
   color: #fff !important;
 }
+
 .worldRightSideRationText h1 {
   font-size: 59px;
   font-weight: 600;
@@ -22,25 +33,281 @@
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
+
 .worldRightSideRationText p {
   font-family: "Inter", sans-serif;
   line-height: 30px;
   font-size: 20px;
-  font-size: 400;
+  font-weight: 400;
   color: #fff;
   white-space: nowrap;
   padding-top: 24px;
 }
-.worldRightSideRation{
+
+.worldRightSideRation {
   display: flex;
   column-gap: 100px;
 }
-.slick-arrow{
-  display: none !important  ;
+
+.slick-arrow {
+  display: none !important;
 }
-.worldSlider{
+
+.worldSlider {
   margin-top: 60px;
 }
-.sliderImage{
 
+/* ════════════════════════════════════════
+   RESPONSIVE — 1200px
+   ════════════════════════════════════════ */
+@media (max-width: 1350.99px) {
+  .worldRightSideRation {
+    column-gap: 70px;
+  }
+
+  .worldRightSideRationText h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .worldRightSideRationText p {
+    font-size: 17px;
+  }
+}
+/* ════════════════════════════════════════
+   RESPONSIVE — 1100px
+   ════════════════════════════════════════ */
+@media (max-width: 1199.99px) {
+  .worldRightSideRation {
+    column-gap: 45px;
+  }
+
+  .worldRightSideRationText h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .worldRightSideRationText p {
+    font-size: 17px;
+  }
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE — 992px  
+   ════════════════════════════════════════ */
+@media (max-width: 992.99px) {
+  .worldMain {
+    padding: 70px 0;
+    margin: 140px 0 80px;
+  }
+
+  .worldLeftSide {
+    margin-bottom: 50px;
+  }
+
+  .worldLeftSideHeading {
+    font-size: 30px;
+    line-height: 44px;
+    padding-bottom: 28px;
+  }
+
+  .worldRightSide {
+    width: 100%;
+  }
+
+  .worldRightSideRation {
+    column-gap: 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .worldRightSideRationText {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .worldRightSideRationText h1 {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  .worldRightSideRationText p {
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 12px;
+    white-space: normal;
+  }
+
+  .worldSlider {
+    margin-top: 44px;
+  }
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE — 768px
+   ════════════════════════════════════════ */
+@media (max-width: 768.99px) {
+  .worldMain {
+    padding: 60px 0;
+    margin: 110px 0 65px;
+  }
+
+  .worldLeftSideHeading {
+    font-size: 26px;
+    line-height: 38px;
+    padding-bottom: 22px;
+  }
+
+  .worldRightSideRationText h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .worldRightSideRationText p {
+    font-size: 13px;
+    line-height: 20px;
+    padding-top: 10px;
+  }
+
+  .worldSlider {
+    margin-top: 36px;
+  }
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE — 576px
+   ════════════════════════════════════════ */
+@media (max-width: 576.99px) {
+  .worldMain {
+    padding: 50px 0;
+    margin: 85px 0 52px;
+  }
+
+  .worldLeftSide {
+    margin-bottom: 36px;
+  }
+
+  .worldLeftSideHeading {
+    font-size: 22px;
+    line-height: 32px;
+    padding-bottom: 18px;
+  }
+
+  .worldRightSideRationText h1 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .worldRightSideRationText p {
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 8px;
+  }
+
+  .worldSlider {
+    margin-top: 28px;
+  }
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE — 480px
+   ════════════════════════════════════════ */
+@media (max-width: 480.99px) {
+  .worldMain {
+    padding: 42px 0;
+    margin: 68px 0 44px;
+  }
+
+  .worldLeftSideHeading {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 16px;
+  }
+
+  .worldRightSideRationText h1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .worldRightSideRationText p {
+    font-size: 11px;
+    line-height: 17px;
+    padding-top: 6px;
+  }
+
+  .worldSlider {
+    margin-top: 24px;
+  }
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE — 360px
+   ════════════════════════════════════════ */
+@media (max-width: 360.99px) {
+  .worldMain {
+    padding: 34px 0;
+    margin: 54px 0 36px;
+  }
+
+  .worldLeftSideHeading {
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 14px;
+  }
+
+  .worldRightSideRation {
+    flex-wrap: wrap;
+    row-gap: 18px;
+  }
+
+  .worldRightSideRationText {
+    flex: 0 0 calc(33.33% - 4px);
+    min-width: 0;
+  }
+
+  .worldRightSideRationText h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .worldRightSideRationText p {
+    font-size: 10px;
+    line-height: 16px;
+    padding-top: 5px;
+  }
+
+  .worldSlider {
+    margin-top: 20px;
+  }
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE — 320px
+   ════════════════════════════════════════ */
+@media (max-width: 320.99px) {
+  .worldMain {
+    padding: 28px 0;
+    margin: 44px 0 28px;
+  }
+
+  .worldLeftSideHeading {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 12px;
+  }
+
+  .worldRightSideRationText h1 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .worldRightSideRationText p {
+    font-size: 9px;
+    line-height: 15px;
+    padding-top: 4px;
+  }
+
+  .worldSlider {
+    margin-top: 16px;
+  }
 }
