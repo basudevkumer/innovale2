@@ -44,8 +44,7 @@
   margin-top: 8px;
   transition: 0.3s ease-in-out;
 }
-.teamCardText .teamCardTitle {
-}
+
 .teamCardText .teamCardTitle h6 {
   font-size: 18px;
   font-weight: 600;
@@ -143,3 +142,11 @@
 /* hover animations end */
 
 /* animation area end*/
+
+/* responsive */
+
+@media (max-width: 767.99px) {
+  .teamCardText {
+    max-width: 180px;
+  }
+}
