@@ -20,7 +20,7 @@ const Update = () => {
           </Col>
         </Row>
         <Row>
-          <Col lg={4}>
+          <Col lg={4} md={6} sm={12} xs={12}>
             <UpdateCard
               heading={"Simple Juice Recipes to boost your immune system"}
               paragraph={
@@ -32,7 +32,7 @@ const Update = () => {
               dateText={"8 Sep, 2021"}
             />
           </Col>
-          <Col lg={4}>
+          <Col lg={4} md={6} sm={12} xs={12}>
             <UpdateCard
               heading={"Simple Juice Recipes to boost your immune system"}
               paragraph={
@@ -44,7 +44,7 @@ const Update = () => {
               dateText={"8 Sep, 2021"}
             />
           </Col>
-          <Col lg={4}>
+          <Col lg={4} md={6} sm={12} xs={12}>
             <UpdateCard
               heading={"Simple Juice Recipes to boost your immune system"}
               paragraph={

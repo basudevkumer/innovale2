@@ -20,3 +20,125 @@
   font-family: "Poppins", sans-serif;
   color: #30344e;
 }
+
+/* Large screens (lg) */
+@media (max-width: 1199.99px) {
+  .updateMain {
+    padding: 100px 0;
+  }
+  .updateTopPartHeadingTwo {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .updateTopPart {
+    margin-bottom: 50px;
+  }
+}
+
+/* Medium screens (md) */
+@media (max-width: 991.99px) {
+  .updateMain {
+    padding: 80px 0;
+  }
+  .updateTopPartHeadingOne {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .updateTopPartHeadingTwo {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .updateTopPart {
+    margin-bottom: 40px;
+  }
+}
+
+/* Small screens (sm) */
+@media (max-width: 767.99px) {
+  .updateMain {
+    padding: 60px 0;
+  }
+  .updateTopPartHeadingOne {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .updateTopPartHeadingTwo {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .updateTopPart {
+    margin-bottom: 30px;
+  }
+}
+
+/* Extra small (xs) */
+@media (max-width: 575.99px) {
+  .updateMain {
+    padding: 40px 0;
+  }
+  .updateTopPartHeadingOne {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .updateTopPartHeadingTwo {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .updateTopPart {
+    margin-bottom: 24px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 400.99px) {
+  .updateMain {
+    padding: 30px 0;
+  }
+  .updateTopPartHeadingOne {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .updateTopPartHeadingTwo {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .updateTopPart {
+    margin-bottom: 20px;
+  }
+}
+
+/* 320px - 320.99px */
+@media (min-width: 320px) and (max-width: 320.99px) {
+  .updateMain {
+    padding: 20px 0;
+  }
+  .updateTopPartHeadingOne {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .updateTopPartHeadingTwo {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .updateTopPart {
+    margin-bottom: 16px;
+  }
+}
+
+/* Below 320px */
+@media (max-width: 319.99px) {
+  .updateMain {
+    padding: 16px 0;
+  }
+  .updateTopPartHeadingOne {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .updateTopPartHeadingTwo {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .updateTopPart {
+    margin-bottom: 14px;
+  }
+}

@@ -1,55 +1,126 @@
+/*  Base (Mobile First) */
 .updateCardHeading {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
-  line-height: 34px;
+  line-height: 26px;
   font-family: "Poppins", sans-serif;
   color: #30344e;
-  padding: 20px 0 8px;
+  padding: 12px 0 5px;
 }
 
 .updateCardParagraph {
   font-family: "Inter", sans-serif;
-  line-height: 30px;
-  font-size: 18px;
-  font-size: 400;
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: 400;
   color: #5b5f77;
 }
+
 .updateCardElement {
   border: 0 !important;
 }
+
 .nameDatePart {
   display: flex;
   padding-left: 0 !important;
+  justify-content: space-between;
+  margin-top: 20px;
 }
-.nameDatePartOne {
-  padding-left: 0 !important;
-}
+
 .nameDatePartCommon {
   display: flex;
   align-items: center;
-  gap: 17px;
+  gap: 10px;
 }
+
 .nameDatePartPersonImage {
-  height: 53px !important;
-  width: 53px !important;
-  border-radius: 50% !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50%;
   object-fit: cover;
 }
+
 .updateCardParagraphTwo {
   font-family: "Inter", sans-serif;
-  line-height: 30px;
-  font-size: 16px;
-  font-size: 400;
+  line-height: 22px;
+  font-size: 13px;
   color: #5b5f77;
-  white-space: nowrap;
 }
+
 .card-img,
 .card-img-bottom,
 .card-img-top {
   width: 100%;
-  height: 280px;
-  max-height: 280px;
+  height: 230px;
+  object-fit: cover;
 }
-.updateCardIcon{
-  font-size: 20px;
+
+.updateCardIcon {
+  font-size: 16px;
+}
+
+/*  Small (640px+) */
+@media (min-width: 640px) {
+  .updateCardHeading {
+    font-size: 20px;
+  }
+
+  .updateCardParagraph {
+    font-size: 15px;
+  }
+
+  .card-img {
+    height: 250px;
+  }
+  .updateCardMain{
+    padding-bottom: 20px;
+  }
+}
+
+/*  Medium (768px+) */
+@media (min-width: 768px) {
+  .updateCardHeading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .updateCardParagraph {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .nameDatePartPersonImage {
+    height: 45px !important;
+    width: 45px !important;
+  }
+
+  .updateCardIcon {
+    font-size: 18px;
+  }
+}
+
+/*  Large (1024px+) */
+@media (min-width: 1024px) {
+  .updateCardHeading {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .updateCardParagraph {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .card-img {
+    height: 280px;
+  }
+
+  .nameDatePartPersonImage {
+    height: 53px !important;
+    width: 53px !important;
+  }
+
+  .updateCardIcon {
+    font-size: 20px;
+  }
 }
