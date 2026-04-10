@@ -362,9 +362,10 @@
     z-index: 10;
   }
 
-  /* background image dim করো যাতে text দেখা যায় */
+
   .bannarImage {
-    opacity: 0.15;
+    
+    display: none;
   }
 
   /* man image hide */
