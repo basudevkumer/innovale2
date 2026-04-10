@@ -15,7 +15,7 @@ const Solution = () => {
     <section className="solution">
       <Container>
         <Row>
-          <Col lg={{ span: 5 }}>
+          <Col xs={12} sm={12} md={12} lg={{ span: 5 }}>
             <div className="solutionLeftPart">
               <h2 className="solutionLeftPartHeadingOne">
                 Best Reliable Solution For Your Business
@@ -48,7 +48,7 @@ const Solution = () => {
               </div>
             </div>
           </Col>
-          <Col lg={{ span: 6, offset: 1 }}>
+          <Col  xs={12} sm={12} md={12} lg={{ span: 6, offset: 1 }} className="solutionCard">
             <div className="solutionRightPart">
               <Image src={SolutionImgOne} className="imageSolOne" />
               <Image src={SolutionImgTwo} className="imageSolTwo" />
@@ -56,7 +56,6 @@ const Solution = () => {
               <Image src={SolutionImgFour} className="imageSolFoures" />
               <Image src={SolutionImgFive} className="imageSolFive" />
               <Image src={SolutionImgSix} className="imageSolSix" />
-              
 
               <div className="exprienceCard">
                 <h1 className="exprienceCardHeadingOne">24</h1>

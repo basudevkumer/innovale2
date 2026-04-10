@@ -1,40 +1,47 @@
 .solution {
-  padding: 160px 0;
+  padding: 80px 0;
 }
+
 .solutionLeftPartHeadingOne {
   font-size: 48px;
   font-weight: 600;
   line-height: 62px;
   font-family: "Poppins", sans-serif;
   color: #30344e;
+  margin-bottom: 16px;
 }
+
 .solutionLeftPartParagraphOne {
   font-family: "Inter", sans-serif;
   line-height: 32px;
   font-size: 18px;
-  font-size: 400;
+  font-weight: 400;
   color: #5b5f77;
-  padding: 20px 0 40px;
+  margin-bottom: 32px;
 }
+
 .solutionLeftPartBottom {
   display: flex;
-  column-gap: 87px;
-  margin-top: 70px;
+  column-gap: 40px;
+  margin-top: 40px;
 }
+
 .solutionLeftPartHeadingTwo {
   font-size: 24px;
   font-weight: 600;
   line-height: 34px;
   font-family: "Poppins", sans-serif;
   color: #30344e;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
+
 .solutionLeftPartParagraphTwo {
   font-family: "Inter", sans-serif;
-  line-height: 32px;
+  line-height: 28px;
   font-size: 16px;
-  font-size: 400;
+  font-weight: 400;
   color: #5b5f77;
+  margin: 0;
 }
 
 /* animation area start */
@@ -42,69 +49,81 @@
   position: relative;
   height: 100%;
   width: 100%;
+  min-height: 500px;
 }
+
 .exprienceCard {
-  padding: 20px 25px;
+  padding: 16px 20px;
   background: #52c5b6;
-  width: 361px;
+  width: 320px;
   display: flex;
   align-items: center;
-  column-gap: 14px;
+  column-gap: 12px;
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   right: 15%;
   z-index: 5;
 }
+
 .exprienceCardHeadingOne {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   color: #fff;
+  margin: 0;
 }
+
 .exprienceCardHeadingTwo {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 34px;
+  line-height: 28px;
   font-family: "Poppins", sans-serif;
   color: #fff;
-  width: 134px;
+  width: 120px;
+  margin: 0;
 }
+
 .exCardLine {
   height: 3px;
-  width: 128px;
+  width: 100px;
   background: #fff;
   position: absolute;
-  left: 59%;
-  top: 37%;
+  left: 55%;
+  top: 35%;
   transform: translateY(-50%);
   animation: bigSmall 3s ease-in-out infinite;
 }
+
 @keyframes bigSmall {
   0% {
-    width: 128px;
+    width: 100px;
   }
   50% {
     width: 0px;
   }
 }
+
 .imageSolOne {
   position: absolute;
-  top: 95px;
+  top: 80px;
   right: 0;
   z-index: 10;
 }
+
 .imageSolTwo {
   z-index: 3;
   position: absolute;
   left: 0;
   bottom: 0;
 }
+
 .imageSolThree {
   position: absolute;
   right: -2%;
   top: 12%;
   animation: imageThree 2s linear infinite;
 }
+
 @keyframes imageThree {
   0% {
     right: -2%;
@@ -115,6 +134,7 @@
     right: -2%;
   }
 }
+
 .imageSolFoures {
   position: absolute;
   top: 41%;
@@ -122,6 +142,7 @@
   z-index: 0;
   animation: imageFourAni 2s linear infinite;
 }
+
 @keyframes imageFourAni {
   0% {
     top: 41%;
@@ -151,12 +172,14 @@
     top: 24%;
   }
 }
+
 .imageSolSix {
   position: absolute;
   bottom: 11%;
   right: 5%;
   animation: imageSix 2.5s infinite linear;
 }
+
 @keyframes imageSix {
   0% {
     bottom: 11%;
@@ -168,4 +191,257 @@
   }
 }
 
-/* animation area end */
+/* =====================================================
+   RESPONSIVE — 320px to 2xl
+   ===================================================== */
+
+/* 320px – 479.99px (Extra Small Mobile) */
+@media (min-width: 320px) and (max-width: 479.99px) {
+  .solution {
+    padding: 30px 0;
+  }
+
+  .solutionLeftPartHeadingOne {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 12px;
+  }
+
+  .solutionLeftPartParagraphOne {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .solutionLeftPartBottom {
+    flex-direction: column;
+    column-gap: 0;
+    margin-top: 24px;
+    row-gap: 16px;
+  }
+
+  .solutionLeftPartHeadingTwo {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+
+  .solutionLeftPartParagraphTwo {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .solutionRightPart {
+    display: none;
+  }
+
+  .exprienceCard {
+    display: none;
+  }
+}
+
+/* 480px – 575.99px (Mobile) */
+@media (min-width: 480px) and (max-width: 575.99px) {
+  .solution {
+    padding: 40px 0;
+  }
+
+  .solutionLeftPartHeadingOne {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 14px;
+  }
+
+  .solutionLeftPartParagraphOne {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+
+  .solutionLeftPartBottom {
+    flex-direction: column;
+    column-gap: 0;
+    margin-top: 28px;
+    row-gap: 18px;
+  }
+
+  .solutionLeftPartHeadingTwo {
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 6px;
+  }
+
+  .solutionLeftPartParagraphTwo {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .solutionRightPart {
+    display: none;
+  }
+
+  .exprienceCard {
+    display: none;
+  }
+}
+
+/* 576px – 767.99px (Small Tablet) */
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .solution {
+    padding: 50px 0;
+  }
+
+  .solutionLeftPartHeadingOne {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 14px;
+  }
+
+  .solutionLeftPartParagraphOne {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 26px;
+  }
+
+  .solutionLeftPartBottom {
+    flex-direction: column;
+    column-gap: 0;
+    margin-top: 30px;
+    row-gap: 20px;
+  }
+
+  .solutionLeftPartHeadingTwo {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 6px;
+  }
+
+  .solutionLeftPartParagraphTwo {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .solutionRightPart {
+    display: none;
+  }
+
+  .exprienceCard {
+    display: none;
+  }
+}
+
+/* 768px – 991.99px (Tablet) */
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .solution {
+    padding: 70px 0;
+  }
+
+  .solutionLeftPartHeadingOne {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 16px;
+  }
+
+  .solutionLeftPartParagraphOne {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 28px;
+  }
+
+  .solutionLeftPartBottom {
+    column-gap: 30px;
+    margin-top: 35px;
+  }
+
+  .solutionLeftPartHeadingTwo {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
+
+  .solutionLeftPartParagraphTwo {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .solutionRightPart {
+    min-height: 380px;
+  }
+
+  .exprienceCard {
+    width: 280px;
+    padding: 14px 16px;
+    right: 10%;
+    bottom: 15px;
+  }
+
+  .exprienceCardHeadingOne {
+    font-size: 48px;
+  }
+
+  .exprienceCardHeadingTwo {
+    font-size: 16px;
+    width: 100px;
+  }
+}
+
+/* 992px – 1199.99px (Large Desktop) */
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .solution {
+    padding: 100px 0;
+  }
+
+  .solutionLeftPartHeadingOne {
+    font-size: 42px;
+    line-height: 52px;
+    margin-bottom: 16px;
+  }
+
+  .solutionLeftPartParagraphOne {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 32px;
+  }
+
+  .solutionLeftPartBottom {
+    column-gap: 35px;
+    margin-top: 40px;
+  }
+
+  .exprienceCard {
+    width: 300px;
+    right: 8%;
+    bottom: 20px;
+  }
+}
+
+/* 1200px+ (XL Desktop) */
+@media (min-width: 1200px) {
+  .solution {
+    padding: 80px 0;
+  }
+
+  .solutionLeftPartHeadingOne {
+    font-size: 48px;
+    line-height: 62px;
+    margin-bottom: 16px;
+  }
+
+  .solutionLeftPartParagraphOne {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+
+  .solutionLeftPartBottom {
+    column-gap: 40px;
+    margin-top: 40px;
+  }
+
+  .exprienceCard {
+    width: 320px;
+    padding: 16px 20px;
+    right: 15%;
+    bottom: 20px;
+  }
+}
