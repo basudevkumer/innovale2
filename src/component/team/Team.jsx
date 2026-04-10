@@ -26,8 +26,8 @@ const Team = () => {
       </section>
       <section className="teamTwoMain">
         <Container>
-          <Row>
-            <Col lg={3}>
+          <Row >
+            <Col xs={12} sm={6} lg={3}  className="teamTWoItems">
               <div className="teamTwoElement">
                 <TeamCard
                   heading={"Eleanor Pena"}
@@ -35,7 +35,7 @@ const Team = () => {
                 />
               </div>
             </Col>
-            <Col lg={3}>
+            <Col xs={12} sm={6} lg={3}  className="teamTWoItems">
               <div className="teamTwoElement">
                 <TeamCard
                   heading={"Jenny Wilson"}
@@ -43,7 +43,7 @@ const Team = () => {
                 />
               </div>
             </Col>
-            <Col lg={3}>
+            <Col xs={12} sm={6} lg={3}  className="teamTWoItems">
               <div className="teamTwoElement">
                 <TeamCard
                   heading={"Jerome Bell"}
@@ -51,7 +51,7 @@ const Team = () => {
                 />
               </div>
             </Col>
-            <Col lg={3}>
+            <Col xs={12} sm={6} lg={3}  className="teamTWoItems">
               <div className="teamTwoElement">
                 <TeamCard
                   heading={"Robert Fox"}
