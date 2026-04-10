@@ -2,12 +2,12 @@
   padding: 110px 0;
   margin: 230px 0 120px;
   background: #52c5b6;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .worldsliderImage {
   width: 100%;
-  height: auto;
+  height: 28px;
   object-fit: contain;
   padding: 0 10px;
 }
