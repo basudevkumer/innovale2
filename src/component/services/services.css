@@ -237,13 +237,17 @@
   }
 
   .arrowLeft {
-    left: 25%;
-    bottom: -90px;
+    left: 15%;
+
+    padding: 12px;
+    bottom: -95px;
   }
 
   .arrowRight {
-    right: 25%;
-    bottom: -90px;
+    right: 15%;
+
+    padding: 12px;
+    bottom: -95px;
   }
 }
 
@@ -269,14 +273,16 @@
 
   .serviceSlider {
     padding: 0 14px !important;
+   
   }
 
   .arrowLeft {
-    left: 28%;
+    left: 20%;
   }
 
   .arrowRight {
-    right: 28%;
+    right: 20%;
+
   }
 }
 
